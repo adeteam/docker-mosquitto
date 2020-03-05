@@ -55,8 +55,8 @@ RUN apk --no-cache add --virtual buildDeps git cmake build-base openssl-dev c-ar
       WITH_STRIP=yes \
       WITH_ADNS=no \
       WITH_DOCS=no \
-      WITH_MEMORY_TRACKING=no \
-      WITH_TLS_PSK=no \
+      WITH_MEMORY_TRACKING=yes \
+      WITH_TLS_PSK=yes \
       WITH_WEBSOCKETS=yes \
     binary && \
     install -s -m755 client/mosquitto_pub /usr/bin/mosquitto_pub && \
